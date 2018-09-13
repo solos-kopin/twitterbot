@@ -13,8 +13,8 @@ var params = {
 
 Twitter.get('search/tweets', params, function(err, data, response) {
 	if (!err) {
-		console.log('working');
+		return console.log('working');
 	} else {
-		console.log(err);
+		return console.log(err);
 	}
 })
