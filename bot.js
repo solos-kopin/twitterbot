@@ -4,4 +4,17 @@ var config = require('./config.js');
 var Twitter = new twit(config);
 
 //first bot prototype is to search all hashtags provided 
-console.log("working");
+var params = {
+	q: '#solos',
+	count: 10,
+	result_type: 'recent',
+	lang: 'en'
+}
+
+Twitter.get('search/tweets', params, function(err, data, response) {
+	if (!err) {
+		console.log('working');
+	} else {
+		console.log(err);
+	}
+})
