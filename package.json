@@ -1,0 +1,14 @@
+{
+  "name": "twitbot",
+  "version": "1.0.0",
+  "description": "twitter bot for interaction alerts",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "twit": "^2.2.11"
+  }
+}
